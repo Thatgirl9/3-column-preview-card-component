@@ -25,7 +25,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 4em;
+  min-height: 90vh;
   border: 1px solid var(--header-color);
   border-radius: 20px;
 }
