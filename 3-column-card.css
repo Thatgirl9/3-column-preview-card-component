@@ -10,6 +10,11 @@
   --column3-bg-color: hsl(179, 100%, 13%);
   --header-color: hsl(0, 0%, 95%);
   --text-color: hsla(0, 0%, 100%, 0.75);
+
+  /* FONT FAMILY */
+
+  --font-family-header: "Big Shoulders Display", cursive;
+  --font-family-p-btn: "Lexend Deca", sans-serif;
 }
 
 body {
@@ -35,7 +40,7 @@ body {
 
 .column-header {
   color: var(--header-color);
-  font-family: "Big Shoulders Display", cursive;
+  font-family: --var(--font-family-header);
   text-transform: uppercase;
   font-weight: 700;
   font-size: 29px;
@@ -45,7 +50,7 @@ body {
 
 .column-p {
   color: var(--text-color);
-  font-family: "Lexend Deca", sans-serif;
+  font-family: var(--font-family-p-btn);
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 6em;
@@ -70,7 +75,7 @@ body {
 button {
   padding: 0.7em;
   width: 9.7em;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: var(--font-family-p-btn);
   border-radius: 30px;
   border: 2px solid var(--header-color);
 }
@@ -112,7 +117,7 @@ button {
     flex-wrap: wrap;
     justify-content: none;
     align-items: none;
-    margin: 0;
+    margin: 0.5em 0 0.5em 0;
   }
 
   .column-card {
@@ -120,21 +125,23 @@ button {
   }
 
   .column1-card {
-    width: 100%;
+    width: 90%;
     height: 24em;
     border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     /* border-top-right-radius: 0;  */
   }
   .column2-card {
-    width: 100%;
+    width: 90%;
     height: 24em;
   }
   .column3-card {
-    width: 100%;
+    width: 90%;
     height: 25em;
     border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     /* border-bottom-left-radius: 0; */
   }
 
