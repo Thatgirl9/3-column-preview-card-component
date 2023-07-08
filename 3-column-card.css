@@ -84,33 +84,36 @@ button {
   color: var(--column1-bg-color);
 }
 
-.column1-button:hover {
-  background-color: var(--column1-bg-color);
-  color: var(--header-color);
-  cursor: pointer;
-}
-
 .column2-button {
   color: var(--column2-bg-color);
-}
-
-.column2-button:hover {
-  background-color: var(--column2-bg-color);
-  color: var(--header-color);
-  cursor: pointer;
 }
 
 .column3-button {
   color: var(--column3-bg-color);
 }
 
+/* BUTTON HOVERING */
+.column1-button:hover,
+.column2-button:hover,
 .column3-button:hover {
-  background-color: var(--column3-bg-color);
+  background-color: transparent;
   color: var(--header-color);
   cursor: pointer;
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
 @media screen and (max-width: 768px) {
+  body {
+    margin-bottom: 0.7em;
+  }
+
   .column-component {
     display: flex;
     flex-direction: column;
