@@ -109,6 +109,7 @@ button {
   .column-component {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: none;
     align-items: none;
     margin: 0;
