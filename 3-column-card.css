@@ -92,10 +92,10 @@ button {
   color: var(--column3-bg-color);
 }
 
-/* BUTTON HOVERING */
-.column1-button:hover,
-.column2-button:hover,
-.column3-button:hover {
+/* BUTTON Active */
+.column1-button:active,
+.column2-button:active,
+.column3-button:active {
   background-color: transparent;
   color: var(--header-color);
   cursor: pointer;
