@@ -109,6 +109,7 @@ button {
   color: hsl(228, 45%, 44%);
 }
 
+/* MOBILE SCREEN */
 @media screen and (max-width: 768px) {
   body {
     margin-bottom: 0.7em;
@@ -153,7 +154,8 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) {
+/* TABLET SCREEN */
+@media screen and (min-width: 767px) {
   .column-component {
     display: flex;
     /* flex-direction: column; */
@@ -162,13 +164,19 @@ button {
     align-items: none;
     margin: 0.5em 0 0.5em 0;
   }
+}
 
-  .column2-card {
+/* LAPTOP SCREEN */
+@media screen and (max-width: 1024px) {
+  .column3-card {
     border-top-right-radius: 10px;
+    border-top-left-radius: 0;
     border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0;
   }
 
-  .column3-card {
-    border-radius: 10px;
+  .column2-card {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
