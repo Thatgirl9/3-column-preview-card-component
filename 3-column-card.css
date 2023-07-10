@@ -152,3 +152,23 @@ button {
     margin-bottom: 2em;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .column-component {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: none;
+    align-items: none;
+    margin: 0.5em 0 0.5em 0;
+  }
+
+  .column2-card {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .column3-card {
+    border-radius: 10px;
+  }
+}
