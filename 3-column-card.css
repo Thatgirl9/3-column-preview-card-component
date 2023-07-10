@@ -143,9 +143,9 @@ button {
   .column3-card {
     width: 90%;
     height: 25em;
-    border-top-right-radius: 0;
+    border-top-right-radius: 0 !important;
     border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px !important;
     /* border-bottom-left-radius: 0; */
   }
 
@@ -156,6 +156,10 @@ button {
 
 /* TABLET SCREEN */
 @media screen and (min-width: 767px) {
+  body {
+    margin-bottom: 1em;
+  }
+
   .column-component {
     display: flex;
     /* flex-direction: column; */
@@ -163,6 +167,29 @@ button {
     justify-content: none;
     align-items: none;
     margin: 0.5em 0 0.5em 0;
+  }
+
+  .column2-card {
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+  }
+
+  .column3-card {
+    border-radius: 10px !important;
+  }
+}
+
+@media screen and (min-width: 855px) {
+  .column2-card {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+
+  .column3-card {
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0 !important;
+    border-top-left-radius: 0 !important;
   }
 }
 
